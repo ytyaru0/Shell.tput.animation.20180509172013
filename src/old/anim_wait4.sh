@@ -1,4 +1,4 @@
-Wait(){
+Wait4(){
     local count=0
     while [ $count -lt ${#1} ]; do
         local target="${1:$count:1}"
@@ -7,4 +7,4 @@ Wait(){
         sleep 0.05
     done
 }
-Wait "日本語を一文字ずつ表示する。この度はお疲れ様でした。"
+Wait4 "日本語を一文字ずつ表示する。この度はお疲れ様でした。"
